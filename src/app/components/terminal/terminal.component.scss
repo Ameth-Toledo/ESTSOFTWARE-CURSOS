@@ -1,0 +1,65 @@
+.terminal-ubuntu {
+    background-color: black;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    padding: 15px;
+    width: 1200px;
+    height: 600px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  
+  .head-terminar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .tux-terminal {
+    height: 25px;
+  }
+  
+  .terminal-title {
+    font-size: 18px;
+    color: #33ff33;
+  }
+  
+  .terminal-output {
+    flex-grow: 1;
+    overflow-y: auto;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+  }
+  
+  .terminal-text {
+    margin: 2px 0;
+  }
+  
+  .terminal-input-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .prompt {
+    color: #33ff33;
+  }
+  
+  .terminal-input {
+    background-color: transparent;
+    color: #33ff33;
+    border: none;
+    outline: none;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    flex-grow: 1;
+  }
+  
+  .terminal-input:focus {
+    border-bottom: 1px solid #33ff33;
+  }
+  

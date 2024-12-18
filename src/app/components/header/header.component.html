@@ -1,0 +1,19 @@
+<header class="estsoftware-header">
+    <div class="logo-container">
+      <img src="Logo-EST.svg" alt="logo" class="logo">
+      <h1 class="title">EST-SOFTWARE CURSOS</h1>
+    </div>
+    <button class="menu-toggle" (click)="toggleMenu()">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <nav class="nav-menu" [class.active]="menuOpen">
+      <a (click)="sendHome($event)" class="nav-item"><i class="fa-solid fa-house"></i> Home</a>
+      <a (click)="sendCourses($event)" class="nav-item"><i class="fa-solid fa-book"></i> Cursos</a>
+      <a (click)="sendDevs($event)" class="nav-item"><i class="fa-solid fa-code"></i> Desarrolladores</a>
+      <a (click)="sendDocumentation($event)" class="nav-item"><i class="fa-solid fa-file-lines"></i> Documentación</a>
+      <a (click)="sendLogin($event)" class="nav-item btn-login">
+        <i class="fa-solid fa-right-to-bracket"></i> Login
+      </a>
+    </nav>
+  </header>
+  

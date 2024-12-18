@@ -1,0 +1,47 @@
+.card-course {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .card-course-image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-course-title {
+    margin: 15px 0;
+    font-size: 1.2em;
+  }
+  
+  .card-course-topics {
+    font-size: 1em;
+    color: #555;
+  }
+  
+  .card-course-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+  
+  .card-course-btn:hover {
+    background-color: #45a049;
+  }
+  
+  .card-course-btn i {
+    margin-right: 8px;
+  }
+  
