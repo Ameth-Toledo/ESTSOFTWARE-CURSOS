@@ -5,6 +5,7 @@ import { LoginComponent } from './modules/login/login.component';
 import { RegisterComponent } from './modules/register/register.component';
 import { DevelopersComponent } from './modules/developers/developers.component';
 import { DocumentacionComponent } from './modules/documentacion/documentacion.component';
+import { IntroduccionComponent } from './modules/Linux/introduccion/introduccion.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -13,5 +14,7 @@ export const routes: Routes = [
     { path: 'login', component: LoginComponent },
     { path: 'register', component: RegisterComponent },
     { path: 'developers', component: DevelopersComponent},
-    { path: 'documentation', component:DocumentacionComponent }
+    { path: 'documentation', component:DocumentacionComponent },
+    //Linux
+    { path: 'introduccion/linux', component: IntroduccionComponent}
 ];
