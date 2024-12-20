@@ -1,0 +1,109 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Comando TOUCH</h1>
+  <p class="instrucciones">
+    El comando <strong>touch</strong> se utiliza para crear archivos vacíos o actualizar la fecha y hora de modificación de archivos existentes. Es una herramienta básica pero muy útil para crear rápidamente archivos nuevos.
+  </p>
+
+  <app-card-comandos comand="touch [nombre_archivo]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li><code>touch archivo.txt</code>: Crea un archivo vacío llamado "archivo.txt".</li>
+    <li><code>touch archivo1 archivo2</code>: Crea varios archivos vacíos simultáneamente.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux8.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando CAT</h1>
+  <p class="instrucciones">
+    El comando <strong>cat</strong> (concatenate) se utiliza para mostrar el contenido de un archivo en la terminal, combinar archivos o crear archivos nuevos desde la terminal.
+  </p>
+
+  <app-card-comandos comand="cat [archivo]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li><code>cat archivo.txt</code>: Muestra el contenido del archivo "archivo.txt".</li>
+    <li><code>cat archivo1 archivo2 &gt; combinado.txt</code>: Combina "archivo1" y "archivo2" en un nuevo archivo llamado "combinado.txt".</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux9.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando NANO</h1>
+  <p class="instrucciones">
+    El comando <strong>nano</strong> abre un editor de texto simple y fácil de usar directamente en la terminal. Es ideal para editar archivos rápidamente.
+  </p>
+
+  <app-card-comandos comand="nano [archivo]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li><code>nano archivo.txt</code>: Abre el archivo "archivo.txt" en el editor nano.</li>
+    <li>Dentro de nano, usa <code>Ctrl + O</code> para guardar y <code>Ctrl + X</code> para salir.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux10.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando ECHO</h1>
+  <p class="instrucciones">
+    El comando <strong>echo</strong> se utiliza para imprimir texto o variables en la terminal. También puede redirigir la salida a archivos.
+  </p>
+
+  <app-card-comandos comand="echo [texto]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li><code>echo "Hola Mundo"</code>: Imprime "Hola Mundo" en la terminal.</li>
+    <li><code>echo "Hola Mundo" &gt; archivo.txt</code>: Crea un archivo "archivo.txt" con el texto "Hola Mundo".</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux11.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>

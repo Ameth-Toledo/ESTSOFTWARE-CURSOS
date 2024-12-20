@@ -1,0 +1,108 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Comando MKDIR</h1>
+  <p class="instrucciones">
+    El comando <strong>mkdir</strong> (make directory) se utiliza para crear nuevos directorios en Linux. Es útil para organizar tus archivos y mantener una estructura de directorios bien definida.
+  </p>
+
+  <app-card-comandos comand="mkdir [nombre_directorio]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Algunos ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li><code>mkdir nuevo_directorio</code>: Crea un directorio llamado "nuevo_directorio".</li>
+    <li><code>mkdir -p padre/hijo</code>: Crea una estructura de directorios anidada, como "padre" y dentro de él "hijo".</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux4.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando RMDIR</h1>
+  <p class="instrucciones">
+    El comando <strong>rmdir</strong> (remove directory) se utiliza para eliminar directorios vacíos en Linux. Si un directorio contiene archivos, no puede ser eliminado con este comando.
+  </p>
+
+  <app-card-comandos comand="rmdir [nombre_directorio]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplo práctico:
+  </p>
+  <ul class="instrucciones">
+    <li><code>rmdir viejo_directorio</code>: Elimina el directorio "viejo_directorio" si está vacío.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux5.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando RM</h1>
+  <p class="instrucciones">
+    El comando <strong>rm</strong> (remove) se utiliza para eliminar archivos o directorios en Linux. Por defecto, no elimina directorios si contienen archivos.
+  </p>
+
+  <app-card-comandos comand="rm [archivo]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplo práctico:
+  </p>
+  <ul class="instrucciones">
+    <li><code>rm archivo.txt</code>: Elimina el archivo "archivo.txt".</li>
+    <li><code>rm -i archivo.txt</code>: Solicita confirmación antes de eliminar "archivo.txt".</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux6.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando RM -R</h1>
+  <p class="instrucciones">
+    El comando <strong>rm -r</strong> (remove recursively) elimina directorios y su contenido de forma recursiva. Es una herramienta poderosa, pero debes usarla con cuidado, ya que puede eliminar grandes cantidades de datos rápidamente.
+  </p>
+
+  <app-card-comandos comand="rm -r [directorio]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Ejemplo práctico:
+  </p>
+  <ul class="instrucciones">
+    <li><code>rm -r carpeta</code>: Elimina la carpeta "carpeta" y todo su contenido.</li>
+    <li><code>rm -rf carpeta</code>: Elimina la carpeta "carpeta" sin solicitar confirmación, incluso si contiene archivos protegidos.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux7.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>

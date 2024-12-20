@@ -1,1 +1,79 @@
 <app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Comando Clear</h1>
+  <p class="instrucciones">
+    El comando <strong>clear</strong> es utilizado en Linux para limpiar la terminal. Esto es útil cuando queremos despejar la pantalla de texto previamente ejecutado, 
+    facilitando la visualización de nuevos comandos o salidas.
+  </p>
+
+  <app-card-comandos comand="clear"></app-card-comandos>
+
+  <p class="instrucciones">
+    Al ejecutar este comando, el contenido de la terminal se oculta, pero no se elimina. La información anterior aún puede ser visible si se desplaza hacia arriba 
+    (dependiendo del terminal que estés usando).
+  </p>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux1.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando LS</h1>
+  <p class="instrucciones">
+    El comando <strong>ls</strong> se utiliza para listar los archivos y directorios en el directorio actual. Este comando es muy útil para explorar el contenido 
+    de tu sistema de archivos.
+  </p>
+
+  <app-card-comandos comand="ls"></app-card-comandos>
+
+  <p class="instrucciones">
+    Puedes combinar <strong>ls</strong> con opciones para obtener más información, como:
+  </p>
+  <ul class="instrucciones">
+    <li><code>ls -l</code>: Muestra los archivos en formato de lista detallada.</li>
+    <li><code>ls -a</code>: Incluye archivos ocultos en el listado.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux2.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <hr class="section-divider" />
+
+  <h1 class="title">Comando CD</h1>
+  <p class="instrucciones">
+    El comando <strong>cd</strong> (change directory) permite navegar entre directorios en el sistema de archivos. 
+    Es una herramienta esencial para moverte dentro de la estructura de directorios de Linux.
+  </p>
+
+  <app-card-comandos comand="cd [directorio]"></app-card-comandos>
+
+  <p class="instrucciones">
+    Algunos ejemplos comunes son:
+  </p>
+  <ul class="instrucciones">
+    <li><code>cd /</code>: Cambia al directorio raíz.</li>
+    <li><code>cd ..</code>: Sube un nivel al directorio padre.</li>
+    <li><code>cd ~/Documentos</code>: Cambia al directorio "Documentos" dentro de tu carpeta personal.</li>
+  </ul>
+
+  <div class="video-container">
+    <video class="video-player" src="https://ameth-toledo.github.io/videos/videos/linux3.webm" controls autoplay></video>
+  </div>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>

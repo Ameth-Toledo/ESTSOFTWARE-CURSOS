@@ -5,17 +5,17 @@ import { CardComandosComponent } from "../../../components/card-comandos/card-co
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-actividad02-linux',
+  selector: 'app-actividad05-linux',
   standalone: true,
   imports: [HeaderComponent, FooterComponent, CardComandosComponent],
-  templateUrl: './actividad02-linux.component.html',
-  styleUrl: './actividad02-linux.component.scss'
+  templateUrl: './actividad05-linux.component.html',
+  styleUrl: './actividad05-linux.component.scss'
 })
-export class Actividad02LinuxComponent {
+export class Actividad05LinuxComponent {
   constructor(private router : Router) {}
 
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['actividad/linux/id=3'])
+    this.router.navigate(['actividad/linux/id=5'])
   }
 }

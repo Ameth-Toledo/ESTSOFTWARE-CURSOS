@@ -1,0 +1,65 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Comando SUDO CHMOD</h1>
+  <p class="instrucciones">
+    El comando <strong>sudo chmod</strong> se utiliza para cambiar los permisos de un archivo o directorio en Linux. Los permisos definen quién puede leer, escribir o ejecutar un archivo. Los permisos se pueden establecer utilizando tanto letras como números.
+  </p>
+  <app-card-comandos comand="sudo chmod [permisos] [archivo]"></app-card-comandos>
+
+  <p class="instrucciones">
+    En lugar de utilizar letras como <code>r</code> (lectura), <code>w</code> (escritura) y <code>x</code> (ejecución), puedes usar números. 
+    Los permisos se asignan usando un sistema de tres dígitos donde cada dígito representa una combinación de permisos para el propietario, el grupo y otros usuarios.
+  </p>
+
+  <h2 class="title">Explicación de los números en CHMOD</h2>
+  <p class="instrucciones">
+    Los números utilizados en <strong>chmod</strong> están basados en el sistema octal, donde:
+  </p>
+  <ul class="instrucciones">
+    <li class="listas"><strong>4</strong> = Permiso de lectura (<code>r</code>)</li>
+    <li class="listas"><strong>2</strong> = Permiso de escritura (<code>w</code>)</li>
+    <li class="listas"><strong>1</strong> = Permiso de ejecución (<code>x</code>)</li>
+    <li class="listas"><strong>0</strong> = Sin permisos</li>
+  </ul>
+
+  <p class="instrucciones">
+    Los números se suman para determinar los permisos. Por ejemplo:
+  </p>
+  <ul class="instrucciones">
+    <li class="listas"><strong>7</strong> = 4 (lectura) + 2 (escritura) + 1 (ejecución) = <code>rwx</code> (lectura, escritura y ejecución)</li>
+    <li class="listas"><strong>6</strong> = 4 (lectura) + 2 (escritura) = <code>rw-</code> (lectura y escritura)</li>
+    <li class="listas"><strong>5</strong> = 4 (lectura) + 1 (ejecución) = <code>r-x</code> (lectura y ejecución)</li>
+    <li class="listas"><strong>4</strong> = 4 (lectura) = <code>r--</code> (solo lectura)</li>
+    <li class="listas"><strong>3</strong> = 2 (escritura) + 1 (ejecución) = <code>wx-</code> (escritura y ejecución)</li>
+    <li class="listas"><strong>3</strong> = 2 (escritura) + 1 (ejecución) = <code>wx-</code> (escritura y ejecución)</li>
+    <li class="listas"><strong>2</strong> = 2 (escritura) = <code>w--</code> (solo escritura)</li>
+    <li class="listas"><strong>1</strong> = 1 (ejecución) = <code>x--</code> (solo ejecución)</li>
+    <li class="listas"><strong>0</strong> = Sin permisos = <code>---</code></li>
+  </ul>
+
+  <p class="instrucciones">
+    Así, cuando se utiliza <code>sudo chmod 777 archivo.txt</code>, se le otorgan al propietario, al grupo y a los demás usuarios los permisos completos (lectura, escritura y ejecución) sobre el archivo.
+  </p>
+
+  <p class="instrucciones">
+    Ejemplos prácticos:
+  </p>
+  <ul class="instrucciones">
+    <li class="listas"><code>sudo chmod 755 archivo.txt</code>: Asigna permisos de lectura, escritura y ejecución al propietario, y solo lectura y ejecución al grupo y otros.</li>
+    <li class="listas"><code>sudo chmod 644 archivo.txt</code>: Asigna permisos de lectura y escritura al propietario, y solo lectura al grupo y otros.</li>
+  </ul>
+
+  <div class="video-container">
+    <video 
+      class="video-player" 
+      src="https://ameth-toledo.github.io/videos/videos/linux12.webm" 
+      controls 
+      autoplay
+    ></video>
+  </div>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>

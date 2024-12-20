@@ -10,6 +10,9 @@ import { Actividad01LinuxComponent } from './modules/Linux/actividad01-linux/act
 import { DocumentacionLinuxComponent } from './modules/Linux/documentacion-linux/documentacion-linux.component';
 import { Documentacion01LinuxComponent } from './modules/Linux/documentacion01-linux/documentacion01-linux.component';
 import { Actividad02LinuxComponent } from './modules/Linux/actividad02-linux/actividad02-linux.component';
+import { Actividad03LinuxComponent } from './modules/Linux/actividad03-linux/actividad03-linux.component';
+import { Actividad04LinuxComponent } from './modules/Linux/actividad04-linux/actividad04-linux.component';
+import { Actividad05LinuxComponent } from './modules/Linux/actividad05-linux/actividad05-linux.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -24,6 +27,10 @@ export const routes: Routes = [
     //actividades
     { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
     { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
+    { path: 'actividad/linux/id=3', component: Actividad03LinuxComponent },
+    { path: 'actividad/linux/id=4', component: Actividad04LinuxComponent },
+    { path: 'actividad/linux/id=5', component: Actividad05LinuxComponent },
+
     //documentación
     { path: 'documentacion/linux/id=1', component: DocumentacionLinuxComponent },
     { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent }
