@@ -6,6 +6,10 @@
     topics="Introducción, Command Line, Creacion de directorios, Actualizacion de paquetes, Permisos."
     route="introduccion/linux"/>
   <app-card-cursos
+    image="https://miro.medium.com/v2/resize:fit:1400/0*wOj0kIGoknqaTjLv.png"
+    courseName="Algoritmos con C++"
+    topics="¿Que son las variables?, Diagramas de flujo, Ciclos, Tipos de datos, Funciones y mas..."/>
+  <app-card-cursos
     image="https://blog.knoldus.com/wp-content/uploads/2020/05/Logo.png"
     courseName="HTML, CSS Y JavaScript"
     topics="Estructura de archivos, creacion de LadingPages, Estilos de ccs, JavaScript para Front-End."/>
@@ -26,7 +30,7 @@
     courseName="Java"
     topics="Introduccion, Estructura MVC, Programacion Orientada a Objetos, JavaFx, y mas... "/>
   <app-card-cursos
-    image="https://ir4tech.com/wp-content/uploads/2019/12/python-language-banner.jpg"
+    image="https://ciracollege.com/wp-content/uploads/2020/11/How-to-Learn-Python.jpg"
     courseName="Python"
     topics="Introduccion, Interfaces graficas con tkinter, Funciones, Programacion Orientada a objetos y mas..."/>
   <app-card-cursos
@@ -53,5 +57,22 @@
     image="https://codigoonclick.com/wp-content/uploads/2019/05/practice-javascript-and-learn-functions-400x277.png"
     courseName="Estructuras de Datos Avanzadas"
     topics="Arboles binarios, Uso de callback, Grafos, Tablas Hash."/>
+  <app-card-cursos
+    image="https://ausum.cloud/wp-content/uploads/2024/02/aws-servicios-principales.jpg"
+    courseName="AWS Basico"
+    topics="Tipos de instancias, Crear instancias, Direcciones IP, Crear IPs elasticas, Reglas de Entradas y mas..."/>
+  </div>
+<a (click)="ViewPluCourses($event)">Ver mas cursos</a>
+
+<div class="promocion-linux-container">
+  <section class="promocion-linux">
+    <h1 class="title-linux">
+      Pon en práctica tus conocimientos de Linux en la consola, que te ofrece EST-SOFTWARE en el curso gratuito de Linux
+    </h1>
+    <app-terminal></app-terminal>
+    <button class="btn-iniciar" (click)="sendCourseLinux($event)">
+      <span>Iniciar Curso</span>
+      <i class="fas fa-arrow-right"></i>
+    </button>
+  </section>
 </div>
-<app-terminal></app-terminal>

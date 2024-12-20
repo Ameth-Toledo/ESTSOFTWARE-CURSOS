@@ -6,6 +6,10 @@ import { RegisterComponent } from './modules/register/register.component';
 import { DevelopersComponent } from './modules/developers/developers.component';
 import { DocumentacionComponent } from './modules/documentacion/documentacion.component';
 import { IntroduccionComponent } from './modules/Linux/introduccion/introduccion.component';
+import { Actividad01LinuxComponent } from './modules/Linux/actividad01-linux/actividad01-linux.component';
+import { DocumentacionLinuxComponent } from './modules/Linux/documentacion-linux/documentacion-linux.component';
+import { Documentacion01LinuxComponent } from './modules/Linux/documentacion01-linux/documentacion01-linux.component';
+import { Actividad02LinuxComponent } from './modules/Linux/actividad02-linux/actividad02-linux.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -16,5 +20,11 @@ export const routes: Routes = [
     { path: 'developers', component: DevelopersComponent},
     { path: 'documentation', component:DocumentacionComponent },
     //Linux
-    { path: 'introduccion/linux', component: IntroduccionComponent}
+    { path: 'introduccion/linux', component: IntroduccionComponent},
+    //actividades
+    { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
+    { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
+    //documentación
+    { path: 'documentacion/linux/id=1', component: DocumentacionLinuxComponent },
+    { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent }
 ];

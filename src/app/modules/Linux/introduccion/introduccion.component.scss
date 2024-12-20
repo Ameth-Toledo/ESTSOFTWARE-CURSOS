@@ -1,0 +1,35 @@
+.title {
+    color: #333;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .banner {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+  }
+  
+  .next-course {
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: auto;
+  }
+  
+  .next-course:hover {
+    background-color: #0056b3; 
+    cursor: pointer;
+  }
+  

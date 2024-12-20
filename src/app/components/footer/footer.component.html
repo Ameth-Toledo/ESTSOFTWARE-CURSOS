@@ -1,1 +1,31 @@
-<p>footer works!</p>
+<footer class="est-software-footer">
+    <div class="footer-content">
+      <div class="left-content">
+        <img src="Logo-EST.svg" alt="logo" class="logo">
+        <h1 class="title-footer">EST SOFTWARE</h1>
+      </div>
+  
+      <div class="feedback-container">
+        <label for="feedback" class="feedback-label">
+          Cuéntanos qué tal te han parecido los cursos de EST SOFTWARE o si tienes sugerencias para nuevos cursos y cómo mejorar nuestra comunidad:
+        </label>
+        <textarea id="feedback" class="feedback-textarea" [(ngModel)]="feedback" placeholder="Escribe aquí tus comentarios..." (ngModelChange)="validateFeedback()"></textarea>
+        <button class="submit-btn" (click)="onSubmit()">Enviar</button>
+      </div>
+  
+      <div class="right-content">
+        <a href="https://ameth-toledo.github.io/estsoftware/" class="visit-link">
+          <i class="fas fa-globe"></i> Visita nuestro sitio oficial
+        </a>
+      </div>
+    </div>
+  
+    <div *ngIf="modalVisible" class="modal">
+      <div class="modal-content">
+        <i [class]="modalIcon"></i>
+        <p>{{ modalMessage }}</p>
+        <button (click)="closeModal()" class="modal-close-btn">Cerrar</button>
+      </div>
+    </div>
+  </footer>
+  

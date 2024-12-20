@@ -3,17 +3,17 @@ import { HeaderComponent } from "../../../components/header/header.component";
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-introduccion',
+  selector: 'app-documentacion-linux',
   standalone: true,
   imports: [HeaderComponent],
-  templateUrl: './introduccion.component.html',
-  styleUrl: './introduccion.component.scss'
+  templateUrl: './documentacion-linux.component.html',
+  styleUrl: './documentacion-linux.component.scss'
 })
-export class IntroduccionComponent {
+export class DocumentacionLinuxComponent {
   constructor(private router : Router) {}
 
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['/actividad/linux/id=1'])
+    this.router.navigate(['documentacion/linux/id=2'])
   }
 }

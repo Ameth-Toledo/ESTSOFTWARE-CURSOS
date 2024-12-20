@@ -1,0 +1,32 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Actualización de paquetes</h1>
+  <p class="instrucciones">
+    En Linux es importante siempre mantener nuestro sistema operativo actualizado. Ya que asi obtenemos nuevas funcionalidades que las aplicaciones nos ofrecen. 
+    A continuación, se muestra un comando clave para realizar esta tarea:
+  </p>
+
+  <app-card-comandos comand="sudo apt update"></app-card-comandos>
+
+  <p class="instrucciones">Este comando actualiza la base de datos local de paquetes del sistema, sincronizándola con los repositorios configurados. Esto asegura que el sistema sepa qué versiones de paquetes están disponibles.</p>
+
+  <div class="video-container">
+    <video class="video-player" src="https://ameth-toledo.github.io/videos/videos/linux1.webm" controls autoplay></video>
+  </div>
+
+  <h1>--------------------------------------------------------------------------------------</h1>
+  <p class="instrucciones">ahora que el sistema ya sabe que paquetes estan disponibles para actualizar vamos a descargar las actualizaciones, ejecutando el siguiente comando:</p>
+  
+  <app-card-comandos comand="sudo apt upgrade"/>
+
+  <div class="video-container">
+    <video class="video-player" src="https://ameth-toledo.github.io/videos/videos/linux2.webm" controls autoplay></video>
+  </div>
+  
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+
+</div>
+
+
+<app-footer></app-footer>

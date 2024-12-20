@@ -1,0 +1,9 @@
+<div class="card-course">
+    <img [src]="image" [alt]="courseName" class="card-course-image" />
+    <h3 class="card-course-title">{{ courseName }}</h3>
+    <p class="card-course-topics">{{ topics }}</p>
+    <a class="card-course-btn" (click)="navigateToCourse($event)">
+      <i class="fa fa-arrow-right"></i> Ver Documentación    
+    </a>
+  </div>
+  
