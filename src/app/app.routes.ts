@@ -15,6 +15,7 @@ import { Actividad04LinuxComponent } from './modules/Linux/actividad04-linux/act
 import { Actividad05LinuxComponent } from './modules/Linux/actividad05-linux/actividad05-linux.component';
 import { Actividad06LinuxComponent } from './modules/Linux/actividad06-linux/actividad06-linux.component';
 import { NotfoundComponent } from './modules/notfound/notfound.component';
+import { IntroductionAlgoritmsComponent } from './modules/C++/introduction-algoritms/introduction-algoritms.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -26,6 +27,8 @@ export const routes: Routes = [
     { path: 'documentation', component:DocumentacionComponent },
     //Linux
     { path: 'introduccion/linux', component: IntroduccionComponent},
+    //C++
+    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //actividades
     { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
     { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
