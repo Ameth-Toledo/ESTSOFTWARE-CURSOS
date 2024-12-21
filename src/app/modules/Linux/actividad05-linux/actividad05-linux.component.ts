@@ -16,6 +16,6 @@ export class Actividad05LinuxComponent {
 
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['actividad/linux/id=5'])
+    this.router.navigate(['actividad/linux/id=6'])
   }
 }
