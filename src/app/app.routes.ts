@@ -14,6 +14,7 @@ import { Actividad03LinuxComponent } from './modules/Linux/actividad03-linux/act
 import { Actividad04LinuxComponent } from './modules/Linux/actividad04-linux/actividad04-linux.component';
 import { Actividad05LinuxComponent } from './modules/Linux/actividad05-linux/actividad05-linux.component';
 import { Actividad06LinuxComponent } from './modules/Linux/actividad06-linux/actividad06-linux.component';
+import { NotfoundComponent } from './modules/notfound/notfound.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -34,5 +35,6 @@ export const routes: Routes = [
     { path: 'actividad/linux/id=6', component: Actividad06LinuxComponent },
     //documentación
     { path: 'documentacion/linux/id=1', component: DocumentacionLinuxComponent },
-    { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent }
+    { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent },
+    { path: '**', component: NotfoundComponent }
 ];

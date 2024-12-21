@@ -13,9 +13,9 @@
     El formato general es el siguiente:
   </p>
   <ul class="instrucciones">
-    <li><strong>nuevo_propietario</strong>: Especifica el nuevo propietario del archivo o directorio.</li>
-    <li><strong>nuevo_grupo</strong>: Especifica el nuevo grupo asociado al archivo o directorio.</li>
-    <li><strong>archivo</strong>: Especifica el archivo o directorio cuyo propietario y grupo quieres cambiar.</li>
+    <li class="listas"><strong>nuevo_propietario</strong>: Especifica el nuevo propietario del archivo o directorio.</li>
+    <li class="listas"><strong>nuevo_grupo</strong>: Especifica el nuevo grupo asociado al archivo o directorio.</li>
+    <li class="listas"><strong>archivo</strong>: Especifica el archivo o directorio cuyo propietario y grupo quieres cambiar.</li>
   </ul>
 
   <h2 class="title">Ejemplos de Uso</h2>
@@ -23,21 +23,21 @@
     - Para cambiar el propietario de un archivo sin cambiar el grupo, puedes usar:
   </p>
   <ul class="instrucciones">
-    <li><code>sudo chown juan archivo.txt</code>: Cambia el propietario del archivo <code>archivo.txt</code> a "juan". El grupo no se modifica.</li>
+    <li class="listas"><code>sudo chown juan archivo.txt</code>: Cambia el propietario del archivo <code>archivo.txt</code> a "juan". El grupo no se modifica.</li>
   </ul>
 
   <p class="instrucciones">
     - Para cambiar tanto el propietario como el grupo de un archivo:
   </p>
   <ul class="instrucciones">
-    <li><code>sudo chown juan:admin archivo.txt</code>: Cambia el propietario del archivo a "juan" y el grupo a "admin".</li>
+    <li class="listas"><code>sudo chown juan:admin archivo.txt</code>: Cambia el propietario del archivo a "juan" y el grupo a "admin".</li>
   </ul>
 
   <p class="instrucciones">
     - Para cambiar el propietario de un directorio y todo su contenido (archivos y subdirectorios) recursivamente, se usa la opción <code>-R</code>:
   </p>
   <ul class="instrucciones">
-    <li><code>sudo chown -R juan:admin /directorio</code>: Cambia el propietario y el grupo del directorio <code>/directorio</code> y de todos sus archivos y subdirectorios a "juan" y "admin".</li>
+    <li class="listas"><code>sudo chown -R juan:admin /directorio</code>: Cambia el propietario y el grupo del directorio <code>/directorio</code> y de todos sus archivos y subdirectorios a "juan" y "admin".</li>
   </ul>
 
   <h2 class="title">Detalles Adicionales</h2>
@@ -45,14 +45,14 @@
     - Si solo deseas cambiar el grupo, puedes dejar vacío el nombre del propietario:
   </p>
   <ul class="instrucciones">
-    <li><code>sudo chown :admin archivo.txt</code>: Cambia solo el grupo del archivo a "admin". El propietario no se ve afectado.</li>
+    <li class="listas"><code>sudo chown :admin archivo.txt</code>: Cambia solo el grupo del archivo a "admin". El propietario no se ve afectado.</li>
   </ul>
 
   <p class="instrucciones">
     - Si solo deseas cambiar el propietario, puedes dejar vacío el nombre del grupo:
   </p>
   <ul class="instrucciones">
-    <li><code>sudo chown juan: archivo.txt</code>: Cambia solo el propietario del archivo a "juan". El grupo no se ve afectado.</li>
+    <li class="listas"><code>sudo chown juan: archivo.txt</code>: Cambia solo el propietario del archivo a "juan". El grupo no se ve afectado.</li>
   </ul>
 
   <div class="video-container">
