@@ -4,14 +4,11 @@
       <span class="terminal-title">Terminal ubuntu/EST SOFTWARE</span>
     </div>
   
-    <!-- Salida de la terminal -->
     <div class="terminal-output">
       <div *ngFor="let line of outputLines" class="terminal-text">{{ line }}</div>
     </div>
   
-    <!-- Contenedor de entrada de la terminal -->
     <div class="terminal-input-container">
-      <!-- Prompt y campo de entrada para los comandos -->
       <span class="prompt">{{ currentPath }}$ </span>
       <input 
         [(ngModel)]="inputCommand" 
@@ -21,7 +18,6 @@
         autofocus 
       />
   
-      <!-- Si estamos esperando la contraseña, mostrar un campo de entrada -->
       <div *ngIf="waitingForPassword">
         <input 
           [(ngModel)]="passwordInput" 

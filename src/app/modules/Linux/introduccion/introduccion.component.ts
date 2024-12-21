@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HeaderComponent } from "../../../components/header/header.component";
 import { Router } from '@angular/router';
 import { BannerComponent } from "../../../components/banner/banner.component";
+import { FooterComponent } from "../../../components/footer/footer.component";
 
 @Component({
   selector: 'app-introduccion',
   standalone: true,
-  imports: [HeaderComponent, BannerComponent],
+  imports: [HeaderComponent, BannerComponent, FooterComponent],
   templateUrl: './introduccion.component.html',
   styleUrl: './introduccion.component.scss'
 })
