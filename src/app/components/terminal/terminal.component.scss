@@ -63,3 +63,55 @@
     border-bottom: 1px solid #33ff33;
   }
   
+@media (max-width: 1024px) {
+  .terminal-ubuntu {
+      width: 90%; 
+      height: 500px; 
+  }
+
+  .terminal-title {
+      font-size: 16px; 
+  }
+
+  .tux-terminal {
+      height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terminal-ubuntu {
+      width: 100%; 
+      height: 400px;
+  }
+
+  .terminal-title {
+      font-size: 14px; 
+  }
+
+  .tux-terminal {
+      height: 18px; 
+  }
+
+  .terminal-output {
+      font-size: 14px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-ubuntu {
+      width: 100%;
+      height: 300px; 
+  }
+
+  .terminal-title {
+      font-size: 12px; 
+  }
+
+  .tux-terminal {
+      height: 15px; 
+  }
+
+  .terminal-output {
+      font-size: 12px;
+  }
+}

@@ -1,4 +1,7 @@
 <app-header></app-header>
+
+<app-banner></app-banner>
+
 <div class="cards-container">
   <app-card-cursos
     image="https://tecnologia-facil.com/wp-content/uploads/2015/01/que-es-linux-1.jpg"
@@ -61,8 +64,13 @@
     image="https://ausum.cloud/wp-content/uploads/2024/02/aws-servicios-principales.jpg"
     courseName="AWS Basico"
     topics="Tipos de instancias, Crear instancias, Direcciones IP, Crear IPs elasticas, Reglas de Entradas y mas..."/>
-  </div>
-<a (click)="ViewPluCourses($event)">Ver mas cursos</a>
+</div>
+
+<div class="view-courser">
+  <button (click)="ViewPluCourses($event)" class="btn-iniciar">
+    Ver mas cursos<i class="fas fa-arrow-right"></i>  
+  </button>
+</div>
 
 <div class="promocion-linux-container">
   <section class="promocion-linux">
@@ -76,3 +84,5 @@
     </button>
   </section>
 </div>
+
+<app-footer></app-footer>

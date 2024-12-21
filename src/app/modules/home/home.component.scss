@@ -4,13 +4,14 @@
     justify-content: flex-start; 
     gap: 10px; 
     padding: 20px; 
-}
+  }
 
-.promocion-linux-container {
+  .promocion-linux-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100%; 
+    margin-bottom: 20px;
   }
   
   .promocion-linux {
@@ -62,5 +63,72 @@
   .btn-iniciar span {
     display: inline-block;
   }
+
+  .view-courser {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+  }
   
+  @media (max-width: 1024px) {
+    .promocion-linux {
+      width: 90%;
+      height: 700px;
+    }
+  
+    .title-linux {
+      font-size: 24px;
+      text-align: center;
+    }
+  
+    .btn-iniciar {
+      font-size: 16px;
+      padding: 10px 20px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .promocion-linux {
+      width: 95%;
+      height: auto;
+      padding: 15px;
+    }
+  
+    .title-linux {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  
+    .btn-iniciar {
+      font-size: 14px;
+      padding: 8px 18px;
+      gap: 8px;
+    }
+  
+    .btn-iniciar i {
+      font-size: 18px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .promocion-linux {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .title-linux {
+      font-size: 18px;
+    }
+  
+    .btn-iniciar {
+      font-size: 12px;
+      padding: 6px 15px;
+    }
+  
+    .btn-iniciar i {
+      font-size: 16px;
+    }
+  }
   
