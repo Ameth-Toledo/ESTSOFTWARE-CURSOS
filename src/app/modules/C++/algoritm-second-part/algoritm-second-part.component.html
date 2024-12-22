@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Cómo construir un diagrama de flujo</h1>
+  <p class="instrucciones">
+    Los diagramas de flujo nos ayudan a visualizar procesos de manera clara y estructurada. Vamos a construir uno siguiendo estos pasos:
+  </p>
+
+  <h2 class="subtitle">1. Define el proceso</h2>
+  <p class="instrucciones">
+    Antes de comenzar, piensa en qué problema quieres representar. Define un objetivo claro. Por ejemplo:
+    <em>¿Cómo se resuelve un problema matemático paso a paso?</em>
+  </p>
+
+  <h2 class="subtitle">2. Identifica los pasos</h2>
+  <p class="instrucciones">
+    Escribe cada etapa del proceso en forma de lista. Por ejemplo, para hacer un café:
+  </p>
+  <ul class="instrucciones">
+    <li>Calentar agua</li>
+    <li>Agregar café al filtro</li>
+    <li>Verter agua caliente sobre el café</li>
+    <li>Servir el café en una taza</li>
+  </ul>
+
+  <h2 class="subtitle">3. Usa los símbolos correctos</h2>
+  <p class="instrucciones">
+    Recuerda los componentes básicos:
+  </p>
+  <ul class="instrucciones">
+    <li><strong>Elipse:</strong> Inicio o fin del proceso.</li>
+    <li><strong>Rectángulo:</strong> Representa una acción o tarea.</li>
+    <li><strong>Rombo:</strong> Representa una decisión con diferentes opciones.</li>
+    <li><strong>Flechas:</strong> Conectan los pasos del proceso.</li>
+  </ul>
+
+  <h2 class="subtitle">4. Crea el diagrama</h2>
+  <p class="instrucciones">
+    Conecta cada paso utilizando las flechas para representar el flujo. Asegúrate de que las conexiones sean lógicas y claras.
+  </p>
+
+  <div class="diagram-example">
+    <p class="instrucciones">Ejemplo: Hacer un café</p>
+    <img class="diagram-image" src="https://example.com/coffee-flowchart.png" alt="Ejemplo de diagrama de flujo para hacer café">
+  </div>
+
+  <p class="instrucciones">
+    Este ejemplo muestra un flujo básico donde cada paso está conectado hasta llegar al objetivo final: una taza de café lista.
+  </p>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>

@@ -4,17 +4,17 @@ import { FooterComponent } from "../../../components/footer/footer.component";
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-introduction-algoritms',
+  selector: 'app-algoritm-second-part',
   standalone: true,
   imports: [HeaderComponent, FooterComponent],
-  templateUrl: './introduction-algoritms.component.html',
-  styleUrl: './introduction-algoritms.component.scss'
+  templateUrl: './algoritm-second-part.component.html',
+  styleUrl: './algoritm-second-part.component.scss'
 })
-export class IntroductionAlgoritmsComponent {
-  constructor ( private router : Router ) {}
-
+export class AlgoritmSecondPartComponent {
+    constructor ( private router : Router ) {}
+  
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['actividad/c++/id=1'])
+    this.router.navigate(['/'])
   }
 }
