@@ -74,3 +74,21 @@
 .bienvenida-formal-negritas {
   font-weight: 600;
 }
+
+@media (max-width: 768px) {
+  .bienvenida-linux {
+    width: 90%;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .parrafo {
+    font-size: 12px;
+  }
+
+  .bienvenida-formal {
+    font-size: 12px;
+  }
+}

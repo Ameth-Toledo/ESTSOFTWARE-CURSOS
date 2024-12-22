@@ -91,7 +91,7 @@
   
   @media (max-width: 768px) {
     .promocion-linux {
-      width: 95%;
+      width: 90%;
       height: auto;
       padding: 15px;
     }
@@ -114,8 +114,12 @@
   
   @media (max-width: 480px) {
     .promocion-linux {
-      width: 100%;
+      width: 90%;
       padding: 10px;
+    }
+
+    .promocion-linux-container {
+      justify-content: center;
     }
   
     .title-linux {

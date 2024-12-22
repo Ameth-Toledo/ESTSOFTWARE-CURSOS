@@ -16,6 +16,9 @@ import { Actividad05LinuxComponent } from './modules/Linux/actividad05-linux/act
 import { Actividad06LinuxComponent } from './modules/Linux/actividad06-linux/actividad06-linux.component';
 import { NotfoundComponent } from './modules/notfound/notfound.component';
 import { IntroductionAlgoritmsComponent } from './modules/C++/introduction-algoritms/introduction-algoritms.component';
+import { IntroduccionHtmlComponent } from './modules/Html/introduccion-html/introduccion-html.component';
+import { Actividad01HtmlComponent } from './modules/Html/actividad01-html/actividad01-html.component';
+import { Actividad02HtmlComponent } from './modules/Html/actividad02-html/actividad02-html.component';
 import { AlgoritmSecondPartComponent } from './modules/C++/algoritm-second-part/algoritm-second-part.component';
 
 export const routes: Routes = [
@@ -26,8 +29,12 @@ export const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'developers', component: DevelopersComponent},
     { path: 'documentation', component:DocumentacionComponent },
+    //C++
+    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Linux
     { path: 'introduccion/linux', component: IntroduccionComponent},
+    //C++
+    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //actividades
     { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
     { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
@@ -35,6 +42,10 @@ export const routes: Routes = [
     { path: 'actividad/linux/id=4', component: Actividad04LinuxComponent },
     { path: 'actividad/linux/id=5', component: Actividad05LinuxComponent },
     { path: 'actividad/linux/id=6', component: Actividad06LinuxComponent },
+    //html
+    { path: 'introduccion/html', component: IntroduccionHtmlComponent },
+    { path: 'actividad/html/id=1', component: Actividad01HtmlComponent },
+    { path: 'actividad/html/id=2', component: Actividad02HtmlComponent },
     //documentación
     { path: 'documentacion/linux/id=1', component: DocumentacionLinuxComponent },
     { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent },
