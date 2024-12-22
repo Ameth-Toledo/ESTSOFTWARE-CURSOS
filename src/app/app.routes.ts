@@ -29,12 +29,8 @@ export const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'developers', component: DevelopersComponent},
     { path: 'documentation', component:DocumentacionComponent },
-    //C++
-    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Linux
     { path: 'introduccion/linux', component: IntroduccionComponent},
-    //C++
-    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //actividades
     { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
     { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
