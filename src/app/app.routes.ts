@@ -20,6 +20,9 @@ import { IntroduccionHtmlComponent } from './modules/Html/introduccion-html/intr
 import { Actividad01HtmlComponent } from './modules/Html/actividad01-html/actividad01-html.component';
 import { Actividad02HtmlComponent } from './modules/Html/actividad02-html/actividad02-html.component';
 import { AlgoritmSecondPartComponent } from './modules/C++/algoritm-second-part/algoritm-second-part.component';
+import { AlgoritmThirdPartComponent } from './modules/C++/algoritm-third-part/algoritm-third-part.component';
+import { AlgoritmQuarterPartComponent } from './modules/C++/algoritm-quarter-part/algoritm-quarter-part.component';
+import { AlgoritmFifthPartComponent } from './modules/C++/algoritm-fifth-part/algoritm-fifth-part.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -49,5 +52,8 @@ export const routes: Routes = [
     { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Actividades
     {path: 'actividad/c++/id=1', component: AlgoritmSecondPartComponent},
+    {path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent},
+    {path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent},
+    {path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent},
     { path: '**', component: NotfoundComponent }
 ];
