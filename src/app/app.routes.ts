@@ -19,6 +19,10 @@ import { IntroductionAlgoritmsComponent } from './modules/C++/introduction-algor
 import { IntroduccionHtmlComponent } from './modules/Html/introduccion-html/introduccion-html.component';
 import { Actividad01HtmlComponent } from './modules/Html/actividad01-html/actividad01-html.component';
 import { Actividad02HtmlComponent } from './modules/Html/actividad02-html/actividad02-html.component';
+import { AlgoritmSecondPartComponent } from './modules/C++/algoritm-second-part/algoritm-second-part.component';
+import { AlgoritmThirdPartComponent } from './modules/C++/algoritm-third-part/algoritm-third-part.component';
+import { AlgoritmQuarterPartComponent } from './modules/C++/algoritm-quarter-part/algoritm-quarter-part.component';
+import { AlgoritmFifthPartComponent } from './modules/C++/algoritm-fifth-part/algoritm-fifth-part.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -28,10 +32,9 @@ export const routes: Routes = [
     { path: 'register', component: RegisterComponent },
     { path: 'developers', component: DevelopersComponent},
     { path: 'documentation', component:DocumentacionComponent },
-    //C++
-    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Linux
     { path: 'introduccion/linux', component: IntroduccionComponent},
+    //actividades
     { path: 'actividad/linux/id=1', component: Actividad01LinuxComponent },
     { path: 'actividad/linux/id=2', component: Actividad02LinuxComponent },
     { path: 'actividad/linux/id=3', component: Actividad03LinuxComponent },
@@ -45,5 +48,12 @@ export const routes: Routes = [
     //documentación
     { path: 'documentacion/linux/id=1', component: DocumentacionLinuxComponent },
     { path: 'documentacion/linux/id=2', component: Documentacion01LinuxComponent },
+    //C++
+    { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
+    //Actividades
+    {path: 'actividad/c++/id=1', component: AlgoritmSecondPartComponent},
+    {path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent},
+    {path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent},
+    {path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent},
     { path: '**', component: NotfoundComponent }
 ];

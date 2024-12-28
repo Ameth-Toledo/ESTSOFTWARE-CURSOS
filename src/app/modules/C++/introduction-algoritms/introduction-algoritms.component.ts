@@ -16,6 +16,6 @@ export class IntroductionAlgoritmsComponent {
 
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['/'])
+    this.router.navigate(['actividad/c++/id=1'])
   }
 }
