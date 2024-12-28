@@ -4,7 +4,7 @@
   imageSrc="banner.jpg"
   text01="CURSOS DE" 
   text02="EST SOFTWARE"
-  frase='"El conocimiento es el puente hacia tus sueños, ¡empieza hoy!"'></app-banner>
+  frase='"El conocimiento es la api hacia tus sueños, ¡empieza hoy!"'></app-banner>
 
 <div class="cards-container">
   <app-card-cursos
@@ -66,11 +66,13 @@
     image="https://codigoonclick.com/wp-content/uploads/2019/05/practice-javascript-and-learn-functions-400x277.png"
     courseName="Estructuras de Datos Avanzadas"
     topics="Arboles binarios, Uso de callback, Grafos, Tablas Hash."/>
-  <app-card-cursos
-    image="https://ausum.cloud/wp-content/uploads/2024/02/aws-servicios-principales.jpg"
-    courseName="AWS Basico"
-    topics="Tipos de instancias, Crear instancias, Direcciones IP, Crear IPs elasticas, Reglas de Entradas y mas..."/>
-</div>
+  <div class="quit">
+    <app-card-cursos
+      image="https://ausum.cloud/wp-content/uploads/2024/02/aws-servicios-principales.jpg"
+      courseName="AWS Basico"
+      topics="Tipos de instancias, Crear instancias, Direcciones IP, Crear IPs elasticas, Reglas de Entradas y mas..."/>
+  </div>
+ </div>
 
 <div class="view-courser">
   <button (click)="ViewPluCourses($event)" class="btn-iniciar">

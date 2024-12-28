@@ -51,9 +51,9 @@ export const routes: Routes = [
     //C++
     { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Actividades
-    {path: 'actividad/c++/id=1', component: AlgoritmSecondPartComponent},
-    {path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent},
-    {path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent},
-    {path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent},
+    { path: 'actividad/c++/id=1', component: AlgoritmSecondPartComponent },
+    { path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent },
+    { path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent },
+    { path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent },
     { path: '**', component: NotfoundComponent }
 ];

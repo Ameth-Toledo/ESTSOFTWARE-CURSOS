@@ -73,6 +73,14 @@
   }
   
   @media (max-width: 1024px) {
+    .quit {
+      display: none;
+    }
+
+    .cards-container {
+      justify-content: center;
+    }
+
     .promocion-linux {
       width: 90%;
       height: 700px;
@@ -90,6 +98,14 @@
   }
   
   @media (max-width: 768px) {
+    .quit {
+      display: none;
+    }
+
+    .cards-container {
+      justify-content: center;
+    }
+
     .promocion-linux {
       width: 90%;
       height: auto;
@@ -113,6 +129,14 @@
   }
   
   @media (max-width: 480px) {
+    .quit {
+      display: none;
+    }
+    
+    .cards-container {
+      justify-content: center;
+    }
+
     .promocion-linux {
       width: 90%;
       padding: 10px;

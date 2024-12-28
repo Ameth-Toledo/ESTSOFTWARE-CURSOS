@@ -14,10 +14,13 @@ export class TerminalComponent {
   inputCommand: string = '';
   outputLines: string[] = [];
   fileSystem: { [key: string]: { content: string[]; permissions: string } } = {
-    '/home/ubuntu': { content: ['Documentos', 'Escritorio', 'Música'], permissions: 'drwxr-xr-x' },
+    '/home/ubuntu': { content: ['Documentos', 'Escritorio', 'Música', 'Descargas', 'Videos', 'Publico'], permissions: 'drwxr-xr-x' },
     '/home/ubuntu/Documentos': { content: [], permissions: 'drwxr-xr-x' },
     '/home/ubuntu/Escritorio': { content: [], permissions: 'drwxr-xr-x' },
     '/home/ubuntu/Música': { content: [], permissions: 'drwxr-xr-x' },
+    '/home/ubuntu/Descargas': { content: [], permissions: 'drwxr-xr-x'},
+    '/home/ubuntu/Videos': { content: [], permissions: 'drwxr-xr-x'},
+    '/home/ubuntu/Publico': { content: [], permissions: 'drwxr-xr-x'}
   };
   users: { [key: string]: string } = { root: 'root', ubuntu: 'ubuntu' };
   currentUser: string = 'ubuntu';
