@@ -26,4 +26,9 @@ export class HomeComponent {
     event.preventDefault();
     this.router.navigate(['/cursos'])
   }
+
+  sendDevelopers(event : Event) {
+    event.preventDefault();
+    this.router.navigate(['/developers']);
+  }
 }
