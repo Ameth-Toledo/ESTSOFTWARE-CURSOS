@@ -5,7 +5,9 @@
     padding: 15px 30px;
     background-color: #333;
     color: white;
-    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
   }
   
   .logo-container {
