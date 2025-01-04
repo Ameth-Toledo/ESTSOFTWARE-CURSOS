@@ -64,6 +64,12 @@
     display: inline-block;
   }
 
+  .promocion-linux .terminal-linux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .view-courser {
     display: flex;
     justify-content: center;
@@ -163,6 +169,7 @@
     font-size: 1.2rem;
     margin: 0;
   }
+
   .develop-rol {
     font-size: 20px;
     color: #555;
@@ -192,14 +199,104 @@
 
   .icons .fa-js {
     color: #f7df1e;
+    background-color: #000000;
+    height: auto;
   }
 
   .icons .fa-github {
     color: #333;
   }
 
+  .icons .fa-aws {
+    color: 	#ff9900;
+  }
+
+  .icons .fa-node {
+    color: #539E43;
+  }
+
   .icons i:hover {
     opacity: 0.8;
+  }
+
+  .contenedor-donacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .donacion {
+    width: 97%;
+    height: 500px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .donacion-titulo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1a202c;
+    margin-bottom: 15px;
+  }
+
+  .donacion-descripcion {
+    font-size: 18px;
+    color: #4a5568;
+    margin-bottom: 25px;
+    line-height: 1.5;
+  }
+
+  .donacion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .donacion-label {
+    font-size: 16px;
+    color: #2d3748;
+  }
+
+  .donacion-input {
+    width: 220px;
+    padding: 10px;
+    border: 2px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .donacion-input:focus {
+    border-color: #3182ce;
+    box-shadow: 0 0 5px rgba(49, 130, 206, 0.5);
+    outline: none;
+  }
+
+  #paypal-button-container {
+    width: 500px; 
+    height: 40px;
+    background-color: #FFC439;
+    color: #111;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #paypal-button-container:hover {
+    background-color: #FFC439;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
 
   @media (max-width: 1024px) {
@@ -264,45 +361,47 @@
     .btn-iniciar i {
       font-size: 18px;
     }
-  }
-  
-  @media (max-width: 480px) {
-    .info-titulo {
-      font-size: 8px;
-    }
 
-    .info-texto {
-      font-size: 8px;
-    }
-
-    .quit {
+    .info-desarrollo {
       display: none;
     }
-    
-    .cards-container {
-      justify-content: center;
+
+    .develops {
+      gap: 1px;
     }
 
-    .promocion-linux {
-      width: 90%;
-      padding: 10px;
+    .develop {
+      max-width: 300px;
     }
 
-    .promocion-linux-container {
-      justify-content: center;
+    .conocer-develops {
+      font-size: 10px;
+      align-items: center;
+      max-width: 300px;
     }
-  
-    .title-linux {
-      font-size: 18px;
+
+    .develop-profile {
+      width: 80px;
+      height: 80px;
     }
-  
-    .btn-iniciar {
-      font-size: 12px;
-      padding: 6px 15px;
+
+    .name-develop {
+      font-size: 0.9rem;
     }
-  
-    .btn-iniciar i {
-      font-size: 16px;
+
+    .develop-rol {
+      font-size: 10px;
+    }
+
+    .education {
+      font-size: 10px;
+    }
+
+    .icons i {
+      margin: 0 2px;
+    }
+
+    .donacion {
+      width: 85%;
     }
   }
-  

@@ -85,7 +85,7 @@
     <h1 class="title-linux">
       Pon en práctica tus conocimientos de Linux en la consola, que te ofrece EST-SOFTWARE en el curso gratuito de Linux
     </h1>
-    <app-terminal></app-terminal>
+    <app-terminal class="terminal-linux"></app-terminal>
     <button class="btn-iniciar" (click)="sendCourseLinux($event)">
       <span>Iniciar Curso</span>
       <i class="fas fa-arrow-right"></i>
@@ -108,6 +108,7 @@
 </section>
 
 <section class="develops">
+  <h1 class="conocer-develops">Conoce al equipo de desarrollo de esta plataforma de ayuda a la comunidad estudiantil de Ingenieria de Software.</h1>
   <div class="develop">
     <img src="https://scontent.ftgz2-1.fna.fbcdn.net/v/t39.30808-1/421250546_349183894577986_4424609047365228669_n.jpg?stp=c0.0.720.720a_dst-jpg_s200x200_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFepeVIXxox3qeRat0s_-1CM4Cyaa-LKlYzgLJpr4sqVj0UcBxnLc8Xocc661Dhhdj028p7kMVheiipY62cjncT&_nc_ohc=DidEjYH3_7wQ7kNvgHJtR-S&_nc_oc=AdiHFwxizmC-JYmVzm2OjpRLQjRnQmmQfxDE7VQd8yhHmrYRgDInNo0ys84vhgNHnnIXRC4KH60zp3LRkA3K5jNk&_nc_zt=24&_nc_ht=scontent.ftgz2-1.fna&_nc_gid=AQcQp2PEFHhBr_Z8Rtiy7rj&oh=00_AYDbBGMWqJqc4I8BSdBhO7ZCL8n_MD8eBvLc40O6pIt9qg&oe=67795D06" 
       alt="develop-profile" class="develop-profile">
@@ -122,6 +123,8 @@
         <i class="fab fa-java"></i>
         <i class="fab fa-js"></i>
         <i class="fab fa-github"></i>
+        <i class="fab fa-aws"></i>
+        <i class="fab fa-node"></i>
       </div>
     </div>
   </div>
@@ -140,6 +143,8 @@
         <i class="fab fa-java"></i>
         <i class="fab fa-js"></i>
         <i class="fab fa-github"></i>
+        <i class="fab fa-aws"></i>
+        <i class="fab fa-node"></i>
       </div>
     </div>
   </div>
@@ -152,14 +157,30 @@
       <p class="develop-rol">Programador Back-End</p> 
       <div class="icons">
         <i class="fab fa-angular"></i>
-        <i class="fab fa-react"></i>
         <i class="fab fa-python"></i>
         <i class="fab fa-java"></i>
         <i class="fab fa-js"></i>
         <i class="fab fa-github"></i>
+        <i class="fab fa-aws"></i>
+        <i class="fab fa-node"></i>
       </div>
     </div>
   </div>
 </section>
+
+<div class="contenedor-donacion">
+  <section class="donacion">
+    <h1 class="donacion-titulo">Apoya nuestro proyecto</h1>
+    <p class="donacion-descripcion">
+      Gracias a tu apoyo, podemos seguir ofreciendo contenido gratuito de calidad.
+    </p>
+    <div class="donacion-form">
+      <label for="donacion-amount" class="donacion-label">Ingresa la cantidad a donar:</label>
+      <input type="number" id="donacion-amount" class="donacion-input" placeholder="MXN" min="1" />
+      <div id="paypal-button-container">
+      </div>
+    </div>
+  </section>
+</div>
 
 <app-footer></app-footer>
