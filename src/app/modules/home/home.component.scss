@@ -518,3 +518,92 @@
       font-size: 8px;
     }
   }
+
+  /*
+  .button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .custom-button {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .custom-button:focus {
+    outline: none;
+    ring: 2px solid black;
+  }
+  
+  .button-glow {
+    position: absolute;
+    right: 0;
+    height: 128px;
+    width: 32px;
+    background: white;
+    opacity: 0.1;
+    transform: translateX(48px) rotate(12deg);
+    transition: all 1s ease-out;
+  }
+  
+  .custom-button:hover .button-glow {
+    transform: translateX(-160px);
+  }
+  
+  .button-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .icon {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+  }
+  
+  .button-text {
+    margin-left: 4px;
+  }
+  
+  .button-extra {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  
+  .extra-icon {
+    width: 16px;
+    height: 16px;
+    color: gray;
+    transition: all 0.3s ease;
+  }
+  
+  .custom-button:hover .extra-icon {
+    color: #ffc107;
+  }
+  
+  .extra-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  */
