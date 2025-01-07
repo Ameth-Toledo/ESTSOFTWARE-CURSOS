@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { IntroduccionComponent } from './introduccion.component';
+import { IntroduccionAwsComponent } from './introduccion-aws.component';
 
-describe('IntroduccionComponent', () => {
-  let component: IntroduccionComponent;
-  let fixture: ComponentFixture<IntroduccionComponent>;
+describe('IntroduccionAwsComponent', () => {
+  let component: IntroduccionAwsComponent;
+  let fixture: ComponentFixture<IntroduccionAwsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [IntroduccionComponent]
+      imports: [IntroduccionAwsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(IntroduccionComponent);
+    fixture = TestBed.createComponent(IntroduccionAwsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

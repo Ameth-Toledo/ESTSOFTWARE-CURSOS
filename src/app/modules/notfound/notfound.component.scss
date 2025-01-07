@@ -43,3 +43,9 @@
   font-weight: 600;
   cursor: pointer;
 }
+
+@media (max-width: 768px) { 
+  .contenedor-imagen {
+    width: 400px;
+  }
+}

@@ -23,6 +23,9 @@ import { AlgoritmSecondPartComponent } from './modules/C++/algoritm-second-part/
 import { AlgoritmThirdPartComponent } from './modules/C++/algoritm-third-part/algoritm-third-part.component';
 import { AlgoritmQuarterPartComponent } from './modules/C++/algoritm-quarter-part/algoritm-quarter-part.component';
 import { AlgoritmFifthPartComponent } from './modules/C++/algoritm-fifth-part/algoritm-fifth-part.component';
+import { IntroduccionAwsComponent } from './modules/AWS/introduccion-aws/introduccion-aws.component';
+import { Actividad01DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad01-despligue-frontend-aws/actividad01-despligue-frontend-aws.component';
+import { Actividad02DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad02-despligue-frontend-aws/actividad02-despligue-frontend-aws.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -55,5 +58,10 @@ export const routes: Routes = [
     { path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent },
     { path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent },
     { path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent },
+    //AWS
+    { path: 'introduccion/aws', component: IntroduccionAwsComponent },
+    //Despliegue FrontEnd AWS
+    { path: 'despliegue-front-aws/id=1', component: Actividad01DespligueFrontendAwsComponent },
+    { path: 'despliegue-front-aws/id=2', component: Actividad02DespligueFrontendAwsComponent },
     { path: '**', component: NotfoundComponent }
 ];
