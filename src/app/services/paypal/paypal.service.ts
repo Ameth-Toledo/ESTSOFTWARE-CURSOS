@@ -2,14 +2,13 @@ import { Injectable } from '@angular/core';
 import { environment } from '../../../environments/environment.development';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PaypalService {
-
-  constructor() { }
+  constructor() {}
 
   loadPaypalScript(): Promise<void> {
-    const paypalClientId = environment.PAYPAL_CLIENT_ID;
+    const paypalClientId = environment.PAYPAL_CLIENT_ID; 
     return new Promise((resolve, reject) => {
       if (document.getElementById('paypal-script')) {
         resolve(); 

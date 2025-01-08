@@ -1,8 +1,10 @@
 <app-header></app-header>
-<div class="banners">
-  <img src="setup.jpg" alt="banners" class="portafolio-banner">
-  <button class="btn-portafolio">Ver portafolio</button>
-  <i class="fab fa-github"></i>
-  <i class="fab fa-linkedin"></i>
-  <i class="fas fa-globe"></i>
-</div>
+<section class="developers">
+  <div class="developers-novedades">
+    <div class="developers-container">
+      <img *ngFor="let img of images; let i = index" [src]="img" [class.active]="i === currentIndex" class="developers-imagen"/>
+    </div>
+    <button class="prev" (click)="prev()">&#10094;</button>
+    <button class="next" (click)="next()">&#10095;</button>
+  </div>
+</section>

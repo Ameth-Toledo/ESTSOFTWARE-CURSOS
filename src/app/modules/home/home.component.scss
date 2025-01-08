@@ -376,6 +376,66 @@
     color: #333; 
     font-size: 80px; 
   }
+
+  .novedades {
+    text-align: center;
+  }
+
+  .carousel-novedades {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .title-novedades {
+    font-size: 30px;
+    margin: 20px 0;
+    color: #000000;
+  }
+  
+  .carrusel-imagen {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .carrusel-imagen.active {
+    opacity: 1;
+    position: relative;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }  
   
   @media (max-width: 1024px) {
     .quit {

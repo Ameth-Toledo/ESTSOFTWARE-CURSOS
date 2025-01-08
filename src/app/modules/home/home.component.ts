@@ -7,15 +7,21 @@ import { BannerComponent } from "../../components/banner/banner.component";
 import { FooterComponent } from "../../components/footer/footer.component";
 import { PaypalService } from '../../services/paypal/paypal.service';
 import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [FormsModule, HeaderComponent, TerminalComponent, CardCursosComponent, BannerComponent, FooterComponent],
+  imports: [FormsModule, CommonModule, HeaderComponent, TerminalComponent, CardCursosComponent, BannerComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements AfterViewInit {
   donationAmount : number = 0;
+  images = ['https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513.jpg',
+    'https://cecytebcs.edu.mx/wp-content/uploads/2022/02/programacion.jpeg',
+    'https://www.armadilloamarillo.com/wp-content/uploads/fondo-de-programacion-web_ok.jpg'
+  ];
+  currentIndex = 0;
 
   constructor (private router : Router, private paypalService: PaypalService) {}
 
@@ -77,5 +83,13 @@ export class HomeComponent implements AfterViewInit {
   sendDevelopers(event : Event) {
     event.preventDefault();
     this.router.navigate(['/developers']);
+  }
+
+  next() {
+    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+  }
+
+  prev() {
+    this.currentIndex = (this.currentIndex -1 + this.images.length) % this.images.length;
   }
 }
