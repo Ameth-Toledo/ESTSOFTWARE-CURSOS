@@ -2,8 +2,53 @@
 <section class="developers">
   <div class="developers-novedades">
     <div class="developers-container">
-      <img *ngFor="let img of images; let i = index" [src]="img" [class.active]="i === currentIndex" class="developers-imagen"/>
+      <div 
+        *ngFor="let developer of developers; let i = index"
+        [class.active]="i === currentIndex" 
+        class="developer01"
+      >
+        <div class="developer-content">
+          <div class="developer-text">
+            <h1 class="name-develop">{{ developer.name }}</h1>
+            <p class="rol-develop">{{ developer.role }}</p>
+            <p class="education">{{ developer.education }}</p>
+
+            <div class="button-container">
+              <button class="custom-button" (click)="sendToGitHub(developer.github)">
+                <span class="button-glow"></span>
+                <div class="button-content">
+                  <i class="fa-brands fa-github icon"></i>
+                  <span class="button-text">Star on GitHub</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="button-container">
+              <button class="custom-button" (click)="sendToLinkedIn(developer.linkedin)">
+                <span class="button-glow"></span>
+                <div class="button-content">
+                  <i class="fa-brands fa-linkedin icon"></i>
+                  <span class="button-text">Connect on LinkedIn</span>
+                </div>
+              </button>
+            </div>
+
+            <div class="button-container">
+              <button class="custom-button" (click)="sendToPortfolio(developer.portfolio)">
+                <span class="button-glow"></span>
+                <div class="button-content">
+                  <i class="fa-solid fa-code icon"></i>
+                  <span class="button-text">Ver mi Portafolio</span>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <img [src]="developer.image" [alt]="developer.name" class="develop-imagen">
+        </div>
+      </div>
     </div>
+
     <button class="prev" (click)="prev()">&#10094;</button>
     <button class="next" (click)="next()">&#10095;</button>
   </div>

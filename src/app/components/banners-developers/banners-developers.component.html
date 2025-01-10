@@ -1,0 +1,39 @@
+<div class="developer-content">
+    <div class="developer-text">
+      <h1 class="name-develop">{{ developer_name }}</h1>
+      <p class="rol-develop">{{ developer_role }}</p>
+      <p class="education">{{ developer_education }}</p>
+
+      <div class="button-container">
+        <button class="custom-button" (click)="sendToGitHub(developer.github)">
+          <span class="button-glow"></span>
+          <div class="button-content">
+            <i class="fa-brands fa-github icon"></i>
+            <span class="button-text">Star on GitHub</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="button-container">
+        <button class="custom-button" (click)="sendToLinkedIn(developer.linkedin)">
+          <span class="button-glow"></span>
+          <div class="button-content">
+            <i class="fa-brands fa-linkedin icon"></i>
+            <span class="button-text">Connect on LinkedIn</span>
+          </div>
+        </button>
+      </div>
+
+      <div class="button-container">
+        <button class="custom-button" (click)="sendToPortfolio(developer.portfolio)">
+          <span class="button-glow"></span>
+          <div class="button-content">
+            <i class="fa-solid fa-code icon"></i>
+            <span class="button-text">Ver mi Portafolio</span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <img [src]="developer_image" [alt]="devloper" class="develop-imagen">
+  </div>

@@ -21,8 +21,31 @@
   height: 100%;
 }
 
-.developers-imagen {
-  display: none; 
+.developer01 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 500px;
+  width: 100%;
+}
+
+.developer-content {
+  display: flex;
+  align-items: center;
+  width: 100%; 
+  padding: 20px;
+}
+
+.developer-text {
+  color: white;
+  padding: 20px;
+}
+
+.develop-imagen {
+  width: auto;
+  height: 500px; 
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .prev, .next {
@@ -43,4 +66,69 @@
 
 .next {
   right: 10px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.custom-button {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.custom-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:focus {
+  outline: none;
+}
+
+.button-glow {
+  position: absolute;
+  right: 0;
+  height: 128px;
+  width: 32px;
+  background: white;
+  opacity: 0.1;
+  transform: translateX(48px) rotate(12deg);
+  transition: all 1s ease-out;
+}
+
+.custom-button:hover .button-glow {
+  transform: translateX(-160px);
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.button-text {
+  margin-left: 4px;
 }

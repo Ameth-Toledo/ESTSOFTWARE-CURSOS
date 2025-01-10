@@ -10,17 +10,55 @@ import { CommonModule } from '@angular/common';
   styleUrl: './developers.component.scss'
 })
 export class DevelopersComponent {
-  images = ['https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513.jpg',
-    'https://cecytebcs.edu.mx/wp-content/uploads/2022/02/programacion.jpeg',
-    'https://www.armadilloamarillo.com/wp-content/uploads/fondo-de-programacion-web_ok.jpg'
+  developers = [
+    {
+      name: 'Ameth de Jesus Mendez Toledo',
+      role: 'Programador FullStack',
+      education: 'Ingenieria en Software',
+      github: 'https://github.com/ameth',
+      linkedin: 'https://linkedin.com/in/ameth',
+      portfolio: 'https://ameth-portfolio.com',
+      image: 'Developers/prueba.png'
+    },
+    {
+      name: 'Victor Fabricio Perez Constantino',
+      role: 'Programador FullStack',
+      education: 'Ingenieria en Software',
+      github: 'https://github.com/victor',
+      linkedin: 'https://linkedin.com/in/victor',
+      portfolio: 'https://victor-portfolio.com',
+      image: 'Developers/prueba.png'
+    },
+    {
+      name: 'Sujey Calderon Martinez',
+      role: 'Programador BackEnd',
+      education: 'Ingenieria en Software',
+      github: 'https://github.com/sujey',
+      linkedin: 'https://linkedin.com/in/sujey',
+      portfolio: 'https://sujey-portfolio.com',
+      image: 'Developers/Sujey.jpeg'
+    }
   ];
+
   currentIndex = 0;
 
   next() {
-    this.currentIndex = (this.currentIndex + 1) % this.images.length;
+    this.currentIndex = (this.currentIndex + 1) % this.developers.length;
   }
 
   prev() {
-    this.currentIndex = (this.currentIndex -1 + this.images.length) % this.images.length;
+    this.currentIndex = (this.currentIndex - 1 + this.developers.length) % this.developers.length;
+  }
+
+  sendToGitHub(url: string) {
+    window.open(url, '_blank');
+  }
+
+  sendToLinkedIn(url: string) {
+    window.open(url, '_blank');
+  }
+
+  sendToPortfolio(url: string) {
+    window.open(url, '_blank');
   }
 }
