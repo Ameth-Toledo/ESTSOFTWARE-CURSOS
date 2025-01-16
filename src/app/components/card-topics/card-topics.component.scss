@@ -1,0 +1,37 @@
+.topics {
+    position: relative;
+  }
+  
+  .icon {
+    width: 200px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 15px;
+    object-fit: cover;
+    height: 110px;
+  }
+  
+  .text-content {
+    margin-left: 220px; 
+  }
+  
+  .name-topic {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .subtitle-topic {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  .start-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .start-link:hover {
+    text-decoration: underline;
+  }
+  

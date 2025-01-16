@@ -11,7 +11,30 @@
     <h1 class="title">Bienvenido al curso de Despliegue de Front-End</h1>
     <p class="parrafo">Aquí encontraras ayuda para desplegar tu aplicacion web, tambien te ayudaremos con la seguridad de HTTPS...</p>
     <p class="bienvenida-formal">En nombre del equipo de <strong class="bienvenida-formal-negritas">Desarrollo de EST-SOFTWARE</strong>, te damos una cordial bienvenida a este curso. Estamos encantados de que te unas a nosotros para mejorar tus conocimientos en AWS. ¡Esperamos que disfrutes del contenido y encuentres herramientas valiosas para tu crecimiento profesional!</p>
+   
+    <div class="card-container">
+        <app-card-topics
+          imgSrc="https://serverguy.dev/wp-content/uploads/2023/03/ec2-instance-1024x576.jpg"
+          nameTopic="Configuración y Lanzamiento de Instancia de EC2"
+          subtitle="Como crear una instancia de EC2, creación de par de claves .ppk o .pem"
+          route="https://example.com/ec2-config">
+        </app-card-topics>
+      
+        <app-card-topics
+          imgSrc="https://grupoioe.es/wp-content/uploads/2024/10/filezilla.webp"
+          nameTopic="Conexión con la Instancia de EC2"
+          subtitle="Configuracion de nuevo sitio, configuracion de puerto y ssh.">
+        </app-card-topics>
+
+        <app-card-topics
+            imgSrc="https://grupoioe.es/wp-content/uploads/2024/10/filezilla.webp"
+            nameTopic="Conexión con la Instancia de EC2"
+            subtitle="Configuracion de nuevo sitio, configuracion de puerto y ssh.">
+        </app-card-topics>
+    </div>
+      
     <img src="https://miro.medium.com/v2/resize:fit:500/1*6mgcdtOe0ejCEXyrIet8aQ.png" alt="banner" class="banner"/>
+
     <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>    
 </section>
 

@@ -1,0 +1,100 @@
+.bienvenida-linux {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    width: 96%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    color: #333;
+    text-align: justify;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .banner {
+    display: block;
+    width: 1200px;
+    height: 627px;
+    margin: 20px auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .next-course {
+    display: block;
+    text-align: right;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #007BFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: 0;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .next-course:hover {
+    background-color: #0056b3;
+    cursor: pointer;
+  }
+  
+  .parrafo {
+    text-align: justify;
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 1200px;
+  }
+  
+  .bienvenida-formal {
+    text-align: justify;
+    font-size: 1.1em;
+    max-width: 1200px;
+    color: #333;
+    line-height: 1.6;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+  }
+  
+  .bienvenida-formal-negritas {
+    font-weight: 600;
+  }
+  
+  @media (max-width: 768px) {
+    .bienvenida-linux {
+      width: 90%;
+    }
+  
+    .title {
+      font-size: 24px;
+    }
+  
+    .parrafo {
+      font-size: 12px;
+    }
+  
+    .bienvenida-formal {
+      font-size: 12px;
+    }
+
+    .banner {
+        width: 300px;
+        height: auto;
+    }
+  }

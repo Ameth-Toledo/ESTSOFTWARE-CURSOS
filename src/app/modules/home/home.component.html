@@ -27,7 +27,7 @@
     courseName="React"
     topics="Introducción, ¿Qué es JSX?, CSS, Estructura Molecular, JavaScript, Consumir API REST con Fetch y Axios."/>
   <app-card-cursos
-    image="https://www.searchenginejournal.com/wp-content/uploads/2019/04/the-seo-guide-to-angular.png"
+    image="https://www.dataleaf.nl/wp-content/uploads/2023/06/DataLeaf-Blog-Banner-13-1280x720.png"
     courseName="Angular 18"
     topics="Introduccion, Estructura de carpetas, Consumo de api, Enrutamiento, Modelo de capas y mas..."/>
   <app-card-cursos
@@ -171,20 +171,6 @@
   </div>
 </section>
 
-<div class="contenedor-donacion">
-  <section class="donacion">
-    <div class="donacion-form">
-      <h1 class="donacion-titulo">Apoya nuestro proyecto</h1>
-      <p class="donacion-descripcion">
-        Gracias a tu apoyo, podemos seguir ofreciendo contenido gratuito de calidad.
-      </p>
-      <label for="donacion-amount" class="donacion-label">Ingresa la cantidad a donar:</label>
-      <input type="number" id="donacion-amount" class="donacion-input" placeholder="MXN" min="1" [(ngModel)]="donationAmount" />
-      <div id="paypal-button-container"></div>
-    </div>
-  </section>
-</div>
-
 <section class="tech-section">
   <h1 class="tech-title">
     Este proyecto lo hemos desarrollado a base de todo el conocimiento, que hemos adquirido durante 5 cuatrimestres, 
@@ -258,7 +244,10 @@
   <h1 class="title-novedades">Descubre los nuevos cursos de EST-SOFTWARE</h1>
   <div class="carousel-novedades">
     <div class="carousel-container">
-      <img *ngFor="let img of images; let i = index" [src]="img" [class.active]="i === currentIndex" class="carrusel-imagen"/>
+      <img *ngFor="let img of images; let i = index" 
+           [src]="img" 
+           [class.active]="i === currentIndex" 
+           class="carrusel-imagen"/>
     </div>
     <button class="prev" (click)="prev()">&#10094;</button>
     <button class="next" (click)="next()">&#10095;</button>
