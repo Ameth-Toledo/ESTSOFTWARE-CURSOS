@@ -15,7 +15,7 @@
   }
   
   .promocion-linux {
-    width: 97%;
+    width: 96%;
     height: 800px;
     background-color: #f9f9f9;
     display: flex;
@@ -373,7 +373,50 @@
   .next {
     right: 10px;
   }  
+
+  .promocion-web-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    margin-bottom: 20px;
+  }
   
+  .promocion-web {
+    width: 96%;
+    height: 800px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title-web {
+    margin-bottom: 30px;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    max-width: 1400px;
+  }
+  
+  .card-donaciones-container {
+    display: flex;
+    justify-content: center;     
+    flex-wrap: wrap; 
+    gap: 20px;                
+    padding: 20px;     
+  }
+
+  .card-donaciones {
+    flex: 1 1 300px;  
+    max-width: 400px;  
+    box-sizing: border-box;      
+    margin: 10px;                 
+  }
+
   @media (max-width: 1024px) {
     .quit {
       display: none;
@@ -515,11 +558,32 @@
       font-size: 8px;
     }
 
-    .donacion-titulo {
-      font-size: 20px;
+    .promocion-web {
+      width: 85%;
+      height: 300px;
     }
 
-    .donacion-descripcion {
+    .card-donaciones-container {
+      gap: 6px;                  
+    }
+
+    .title-web {
+      font-size: 10px;
+    }
+
+    .media-query {
+      display: none;
+    }
+
+    .title-novedades {
       font-size: 16px;
+    }
+
+    .carousel-novedades {
+      height: 200px;
+    }
+
+    .carrusel-imagen {
+      height: 200px;
     }
   }
