@@ -26,6 +26,7 @@ import { AlgoritmFifthPartComponent } from './modules/C++/algoritm-fifth-part/al
 import { IntroduccionAwsComponent } from './modules/AWS/introduccion-aws/introduccion-aws.component';
 import { Actividad01DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad01-despligue-frontend-aws/actividad01-despligue-frontend-aws.component';
 import { Actividad02DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad02-despligue-frontend-aws/actividad02-despligue-frontend-aws.component';
+import { IntroduccionJavaComponent } from './modules/Java/introduccion-java/introduccion-java.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -63,5 +64,7 @@ export const routes: Routes = [
     //Despliegue FrontEnd AWS
     { path: 'despliegue-front-aws/id=1', component: Actividad01DespligueFrontendAwsComponent },
     { path: 'despliegue-front-aws/id=2', component: Actividad02DespligueFrontendAwsComponent },
+    //Java
+    {path: 'Introudccion-Java', component: IntroduccionJavaComponent},
     { path: '**', component: NotfoundComponent }
 ];

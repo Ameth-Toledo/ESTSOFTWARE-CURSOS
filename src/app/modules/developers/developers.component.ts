@@ -30,13 +30,13 @@ export class DevelopersComponent {
       image: 'Developers/prueba.png'
     },
     {
-      name: 'Sujey Calderon Martinez',
+      name: 'Christopher Osuna Vazquez',
       role: 'Programador BackEnd',
       education: 'Ingenieria en Software',
-      github: 'https://github.com/sujey',
-      linkedin: 'https://linkedin.com/in/sujey',
-      portfolio: 'https://sujey-portfolio.com',
-      image: 'Developers/Sujey.jpeg'
+      github: 'https://github.com/ChrisOzuna10',
+      linkedin: 'https://www.linkedin.com/in/christopher-ozuna-0828b42a0/',
+      portfolio: 'https://christopher-portfolio.com',
+      image: 'Developers/Chris.png'
     }
   ];
 
