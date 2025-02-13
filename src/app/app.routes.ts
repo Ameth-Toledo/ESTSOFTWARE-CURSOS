@@ -65,6 +65,6 @@ export const routes: Routes = [
     { path: 'despliegue-front-aws/id=1', component: Actividad01DespligueFrontendAwsComponent },
     { path: 'despliegue-front-aws/id=2', component: Actividad02DespligueFrontendAwsComponent },
     //Java
-    {path: 'Introudccion-Java', component: IntroduccionJavaComponent},
+    {path: 'Introduccion-Java', component: IntroduccionJavaComponent},
     { path: '**', component: NotfoundComponent }
 ];
