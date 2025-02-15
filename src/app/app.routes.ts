@@ -20,12 +20,12 @@ import { IntroduccionHtmlComponent } from './modules/Html/introduccion-html/intr
 import { Actividad01HtmlComponent } from './modules/Html/actividad01-html/actividad01-html.component';
 import { Actividad02HtmlComponent } from './modules/Html/actividad02-html/actividad02-html.component';
 import { AlgoritmSecondPartComponent } from './modules/C++/algoritm-second-part/algoritm-second-part.component';
-import { AlgoritmThirdPartComponent } from './modules/C++/algoritm-third-part/algoritm-third-part.component';
-import { AlgoritmQuarterPartComponent } from './modules/C++/algoritm-quarter-part/algoritm-quarter-part.component';
-import { AlgoritmFifthPartComponent } from './modules/C++/algoritm-fifth-part/algoritm-fifth-part.component';
+import { AlgoritmThirtPartComponent } from './modules/C++/algoritm-thirt-part/algoritm-quarter-part.component';
+import { AlgoritmQuarterPartComponent } from './modules/C++/algoritm-quarter-part/algoritm-fifth-part.component';
 import { IntroduccionAwsComponent } from './modules/AWS/introduccion-aws/introduccion-aws.component';
 import { Actividad01DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad01-despligue-frontend-aws/actividad01-despligue-frontend-aws.component';
 import { Actividad02DespligueFrontendAwsComponent } from './modules/AWS-FrontEnd/actividad02-despligue-frontend-aws/actividad02-despligue-frontend-aws.component';
+import { DiagramToCodeComponent } from './modules/C++/diagram-to-code/diagram-to-code.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '', pathMatch: 'full' },
@@ -55,9 +55,9 @@ export const routes: Routes = [
     { path: 'introduction/c++', component: IntroductionAlgoritmsComponent},
     //Actividades
     { path: 'actividad/c++/id=1', component: AlgoritmSecondPartComponent },
-    { path: 'actividad/c++/id=2', component: AlgoritmThirdPartComponent },
+    { path: 'actividad/c++/id=2', component: AlgoritmThirtPartComponent },
     { path: 'actividad/c++/id=3', component: AlgoritmQuarterPartComponent },
-    { path: 'actividad/c++/id=4', component: AlgoritmFifthPartComponent },
+    { path: 'actividad/c++/id=4', component: DiagramToCodeComponent},
     //AWS
     { path: 'introduccion/aws', component: IntroduccionAwsComponent },
     //Despliegue FrontEnd AWS
