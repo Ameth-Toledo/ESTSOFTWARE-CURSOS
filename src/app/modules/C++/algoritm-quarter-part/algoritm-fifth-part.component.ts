@@ -10,11 +10,11 @@ import { Router } from '@angular/router';
   templateUrl: './algoritm-fifth-part.component.html',
   styleUrl: './algoritm-fifth-part.component.scss'
 })
-export class AlgoritmFifthPartComponent {
+export class AlgoritmQuarterPartComponent {
   constructor ( private router : Router ) {}
   
   sendNext(event : Event) {
     event.preventDefault();
-    this.router.navigate(['actividad/c++/id=5'])
+    this.router.navigate(['actividad/c++/id=4'])
   }
 }

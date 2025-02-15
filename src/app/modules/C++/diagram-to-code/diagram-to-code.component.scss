@@ -1,0 +1,166 @@
+.content {
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 2rem;
+  color: #007BFF;
+  text-align: center;
+  margin: 25px 0 15px;
+  font-weight: bold;
+}
+
+.instrucciones {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin: 15px auto;
+  line-height: 1.6;
+  max-width: 900px;
+}
+
+ul.instrucciones {
+  text-align: left;
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.diagram-example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.diagram-image {
+  max-width: 80%;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+}
+
+.next-course {
+  display: block;
+  text-align: right;
+  margin-top: 30px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #007BFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  margin-left: auto;
+}
+
+.next-course:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+.code-container {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  padding: 15px;
+  margin: 20px 0;
+  width: 100%;
+  max-width: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.code-block {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+}
+
+.copy-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.copy-button:hover {
+  background-color: #0056b3;
+}
+
+.ide-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.ide-icon {
+  width: 100px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
+  }
+
+  .instrucciones {
+    font-size: 1.1rem;
+    padding: 0 15px;
+  }
+
+  .diagram-image {
+    max-width: 100%;
+  }
+
+  .code-container {
+    padding: 10px;
+  }
+
+  .code-block {
+    font-size: 0.9rem;
+  }
+
+  .copy-button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+
+  .ide-icon {
+    width: 80px;
+  }
+}

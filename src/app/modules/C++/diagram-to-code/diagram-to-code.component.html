@@ -1,0 +1,82 @@
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="title">Convertir un diagrama de flujo a código C++</h1>
+  <p class="instrucciones">
+    Un diagrama de flujo representa visualmente la lógica de un programa. Vamos a transformarlo en código C++ siguiendo estos pasos:
+  </p>
+
+  <h2 class="subtitle">1. Analiza el diagrama</h2>
+  <p class="instrucciones">
+    Observa la estructura del diagrama y define las variables y operaciones necesarias.
+  </p>
+
+  <h2 class="subtitle">2. Identifica los elementos clave</h2>
+  <p class="instrucciones">
+    Cada símbolo del diagrama se traduce en una estructura de código:
+  </p>
+  <ul class="instrucciones">
+    <li><strong>Elipse:</strong> Inicio (<code>int main()</code>) o fin (<code>return 0;</code>).</li>
+    <li><strong>Rectángulo:</strong> Instrucciones como asignaciones o cálculos.</li>
+    <li><strong>Rombo:</strong> Estructuras de control como <code>if</code> o <code>switch</code>.</li>
+    <li><strong>Flechas:</strong> Indican el flujo de ejecución.</li>
+  </ul>
+
+  <h2 class="subtitle">3. Escribe el código</h2>
+  <p class="instrucciones">
+    Transforma cada paso en código C++. Ejemplo: Sumar dos números.
+  </p>
+  <div class="code-container">
+    <pre class="code-block" id="code-block">
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() 
+    int a, b, suma;
+    cout &lt;&lt; "Ingrese dos numeros: ";
+    cin &gt;&gt; a &gt;&gt; b;
+    suma = a + b;
+    cout &lt;&lt; "La suma es: " &lt;&lt; suma &lt;&lt; endl;
+    return 0;
+
+    </pre>
+    <button class="copy-button" (click)="copyCode()">Copiar Código</button>
+  </div>
+
+  <h2 class="subtitle">4. Comprueba la lógica</h2>
+  <p class="instrucciones">
+    Revisa que la ejecución del código siga la lógica del diagrama de flujo. Prueba con diferentes valores y depura si es necesario.
+  </p>
+
+  <div class="diagram-example">
+    <p class="instrucciones">Ejemplo: Sumar dos números</p>
+    <img class="diagram-image" src="Diagramas de flujo/Suma_diagrama.gif" alt="Ejemplo de diagrama de flujo para sumar dos números">
+  </div>
+
+  <h2 class="subtitle">5. Compila el código</h2>
+  <p class="instrucciones">
+    Puedes compilar el código en los siguientes IDEs. Haz clic en el icono para descargar el IDE.
+  </p>
+  <div class="ide-container">
+    <a href="https://code.visualstudio.com/" target="_blank">
+      <img src="icons-ide/vscode.png" alt="Visual Studio Code" class="ide-icon">
+    </a>
+    <a href="https://www.jetbrains.com/clion/" target="_blank">
+      <img src="icons-ide/clion.png" alt="CLion" class="ide-icon">
+    </a>
+    <a href="https://www.eclipse.org/downloads/packages/release/2021-06/r/eclipse-ide-cc-developers" target="_blank">
+      <img src="icons-ide/eclipse.png" alt="Eclipse" class="ide-icon">
+    </a>
+    <a href="https://netbeans.apache.org/download/index.html" target="_blank">
+      <img src="icons-ide/netbeans.png" alt="NetBeans" class="ide-icon">
+    </a>
+  </div>
+
+  <p class="instrucciones">
+    Este diagrama representa el flujo lógico del programa, desde la entrada de datos hasta la salida del resultado.
+  </p>
+
+  <a (click)="sendNext($event)" class="next-course">Siguiente &gt;&gt;&gt;</a>
+</div>
+
+<app-footer></app-footer>
