@@ -417,6 +417,36 @@
     margin: 10px;                 
   }
 
+  @media (max-width: 2560px) {
+    .quit {
+      display: none;
+    }
+
+    .cards-container {
+      justify-content: center;
+    }
+
+    .develop{
+      display: flex;
+      margin-left: 11.442%;
+    }
+
+    .promocion-linux {
+      width: 90%;
+      height: 700px;
+    }
+  
+    .title-linux {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    .btn-iniciar {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  }
+
   @media (max-width: 1024px) {
     .quit {
       display: none;
